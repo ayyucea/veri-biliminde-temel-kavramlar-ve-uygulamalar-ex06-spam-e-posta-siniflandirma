@@ -43,7 +43,7 @@ PCA ile elde edilen sınıf sonuçlarına ayrıca baktığımda, model 390 spam 
 
 PCA, özellikleri iki bileşene indirerek karar sınırını iki boyutlu bir grafikte incelememi sağladı. Ancak bu çalışmadaki karşılaştırmada PCA kullanılan modelin performansı, PCA kullanılmayan modele göre daha düşük çıktı. PCA öncesinde özellikleri standartlaştırmadığım için ölçekleri farklı olan sütunlar bileşenleri etkilemiş olabilir. Nitekim PCA'da varyansın neredeyse tamamı ilk bileşende toplandı.
 
-Spam e-postaları kaçırmamak önemliyse spam sınıfının recall değerine; normal e-postaları yanlışlıkla spam olarak işaretlememek önemliyse precision değerine dikkat etmek gerekir. Karar sınırı grafiği modelin iki bileşen üzerindeki tahmin bölgelerini gösteriyor; ancak modelin başarısını değerlendirmek için test kümesindeki metriklerle birlikte ele alınmalıdır.
+Bu çalışmada spam e-postaları kaçırmamak önemli olduğu için spam sınıfının recall değeri özellikle bilgilendiricidir. Model, gerçek spam e-postaların %72,6’sını doğru yakalamış ve 107 spam e-postayı kaçırmıştır. Bununla birlikte spam sınıfının precision değeri 0,804’tür; bu ölçüt, spam olarak işaretlenen e-postaların ne kadarının gerçekten spam olduğunu gösterir. Karar sınırı grafiği iki PCA bileşenindeki tahmin bölgelerini görselleştirir; modelin başarısını değerlendirmek için bu görseli test kümesindeki metriklerle birlikte ele almak gerekir.
 
 ## Dosyalar
 
